@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&family=Nunito:wght@200;300;500&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+div#container header nav div#animation {
+  font-size: 2em;
+  float: left;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+div#container header nav .user-path:hover {
+  fill: red;
+}
+div#container header ul {
+  float: right;
+  margin-top: 1em;
+  margin-right: 2em;
+}
+div#container header ul li {
+  display: inline-block;
+  padding: 2em;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+div#container header ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  transition: all 100ms linear;
+  font-size: 1em;
+}
+div#container header ul li:hover {
+  background-color: rgb(205, 174, 0);
+}
+div#container header ul li:hover a {
+  color: rgb(255, 255, 255);
+}
+
+div#container2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(4, 6, 44);
+}
+div#container2 svg#saturn {
+  width: 50%;
+}
+div#container2 svg#saturn .topCirc, div#container2 svg#saturn .bottomCirc, div#container2 svg#saturn .letterS, div#container2 svg#saturn .letterA, div#container2 svg#saturn .letterT, div#container2 svg#saturn .letterU, div#container2 svg#saturn .letterR, div#container2 svg#saturn .letterN, div#container2 svg#saturn .star1, div#container2 svg#saturn .star2, div#container2 svg#saturn .star3, div#container2 svg#saturn .line {
+  stroke-miterlimit: 10;
+}
+div#container2 svg#saturn .topBottom, div#container2 svg#saturn .topCirc, div#container2 svg#saturn .bottomCirc, div#container2 svg#saturn .letterS, div#container2 svg#saturn .letterA, div#container2 svg#saturn .letterT, div#container2 svg#saturn .letterU, div#container2 svg#saturn .letterR, div#container2 svg#saturn .letterN, div#container2 svg#saturn .star1, div#container2 svg#saturn .star2, div#container2 svg#saturn .star3, div#container2 svg#saturn .line {
+  fill: none;
+  stroke-width: 0.75px;
+}
+div#container2 svg#saturn .topCirc, div#container2 svg#saturn .bottomCirc, div#container2 svg#saturn .letterS, div#container2 svg#saturn .letterA, div#container2 svg#saturn .letterT, div#container2 svg#saturn .letterU, div#container2 svg#saturn .letterR, div#container2 svg#saturn .letterN {
+  stroke: #ed1c24;
+  stroke-linejoin: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: 20s circleAnimate forwards;
+          animation: 20s circleAnimate forwards;
+}
+div#container2 svg#saturn .star1, div#container2 svg#saturn .star2, div#container2 svg#saturn .star3, div#container2 svg#saturn .line {
+  stroke: #ffde17;
+  stroke-linejoin: round;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  -webkit-animation: 30s starAnimate forwards;
+          animation: 30s starAnimate forwards;
+}
+@-webkit-keyframes circleAnimate {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes circleAnimate {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes starAnimate {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes starAnimate {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+div#container-2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(212, 193, 202);
+}
+div#container-2 svg#floral {
+  width: 50%;
+}
+div#container-2 svg#floral .letterF, div#container-2 svg#floral .letterL, div#container-2 svg#floral .letterO, div#container-2 svg#floral .letterR, div#container-2 svg#floral .letterA, div#container-2 svg#floral .letterC, div#container-2 svg#floral .letterO-1, div#container-2 svg#floral .letter, div#container-2 svg#floral .petel1, div#container-2 svg#floral .petel2, div#container-2 svg#floral .circ1, div#container-2 svg#floral .circ2 {
+  stroke: #231f20;
+  stroke-linejoin: round;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: 20s letterAnimate forwards;
+          animation: 20s letterAnimate forwards;
+}
+div#container-2 svg#floral .letterF, div#container-2 svg#floral .letterL, div#container-2 svg#floral .letterO, div#container-2 svg#floral .letterR, div#container-2 svg#floral .letterA, div#container-2 svg#floral .letterC, div#container-2 svg#floral .letterO-1, div#container-2 svg#floral .letter, div#container-2 svg#floral .flower, div#container-2 svg#floral .petel1, div#container-2 svg#floral .petel2, div#container-2 svg#floral .stem1, div#container-2 svg#floral .stem2, div#container-2 svg#floral .circ1, div#container-2 svg#floral .circ2 {
+  fill: none;
+  stroke-miterlimit: 10;
+}
+div#container-2 svg#floral .flower, div#container-2 svg#floral .stem1, div#container-2 svg#floral .stem2 {
+  stroke: #fff;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: 25s floraAnimate forwards;
+          animation: 25s floraAnimate forwards;
+}
+@-webkit-keyframes letterAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes letterAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes floraAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes floraAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
