@@ -13,9 +13,6 @@ div#container header nav div#animation {
   margin-top: 1em;
   margin-left: 1em;
 }
-div#container header nav .user-path:hover {
-  fill: red;
-}
 div#container header ul {
   float: right;
   margin-top: 1em;
@@ -26,6 +23,7 @@ div#container header ul li {
   padding: 2em;
   cursor: pointer;
   transition: all 200ms linear;
+  border-radius: 10%;
 }
 div#container header ul li a {
   text-decoration: none;
@@ -163,6 +161,153 @@ div#container-2 svg#floral .flower, div#container-2 svg#floral .stem1, div#conta
   }
 }
 @keyframes floraAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+div#container-3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(201, 235, 231);
+}
+div#container-3 svg#koi {
+  width: 40%;
+  margin-left: 50px;
+}
+div#container-3 svg#koi .body, div#container-3 svg#koi .body-spots {
+  stroke: #000000;
+  stroke-linejoin: round;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: 20s bodyAnimate forwards;
+          animation: 20s bodyAnimate forwards;
+}
+div#container-3 svg#koi .body, div#container-3 svg#koi .leaf, div#container-3 svg#koi .flower, div#container-3 svg#koi .letterK, div#container-3 svg#koi .letterO, div#container-3 svg#koi .letterI, div#container-3 svg#koi .letterD, div#container-3 svg#koi .letterE, div#container-3 svg#koi .letterS, div#container-3 svg#koi .letterI, div#container-3 svg#koi .letterG, div#container-3 svg#koi .letterN, div#container-3 svg#koi .letterS, div#container-3 svg#koi .body-spots {
+  fill: none;
+  stroke-miterlimit: 10;
+  stroke-width: 0.75px;
+}
+div#container-3 svg#koi .leaf {
+  stroke: #ffffff;
+  stroke-linejoin: round;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: 30s leafAnimate forwards;
+          animation: 30s leafAnimate forwards;
+}
+div#container-3 svg#koi .letterK, div#container-3 svg#koi .letterO, div#container-3 svg#koi .letterI, div#container-3 svg#koi .letterD, div#container-3 svg#koi .letterE, div#container-3 svg#koi .letterS, div#container-3 svg#koi .letterI, div#container-3 svg#koi .letterG, div#container-3 svg#koi .letterN, div#container-3 svg#koi .letterS, div#container-3 svg#koi .flower {
+  stroke: #be1e2d;
+  stroke-linejoin: round;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: 30s letterAnimate forwards;
+          animation: 30s letterAnimate forwards;
+}
+@keyframes letterAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes bodyAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes bodyAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes leafAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes leafAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+div#container-4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(7, 41, 45);
+}
+div#container-4 svg#girl {
+  width: 40%;
+}
+div#container-4 svg#girl .leaf {
+  fill: #fff;
+  stroke-linejoin: round;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: 30s leafAnimate forwards;
+          animation: 30s leafAnimate forwards;
+}
+div#container-4 svg#girl .leaf, div#container-4 svg#girl .face, div#container-4 svg#girl .leaf, div#container-4 svg#girl .letter {
+  stroke-miterlimit: 10;
+}
+div#container-4 svg#girl .face, div#container-4 svg#girl .letter {
+  stroke: #fff;
+  stroke-linejoin: round;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: 15s itemsAnimate forwards;
+          animation: 15s itemsAnimate forwards;
+}
+div#container-4 svg#girl .face, div#container-4 svg#girl .leaf, div#container-4 svg#girl .letter {
+  fill: none;
+}
+div#container-4 svg#girl .leaf {
+  stroke: #bf9c00;
+  stroke-linejoin: round;
+}
+div#container-4 svg#girl .letter {
+  stroke-width: 0.5px;
+}
+@keyframes leafAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes itemsAnimate {
+  from {
+    stroke-dashoffset: 500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes itemsAnimate {
   from {
     stroke-dashoffset: 500;
   }
